@@ -1,0 +1,414 @@
+/*
+
+
+architecture
+workspace
+header
+join-us
+footer
+sign-up
+
+
+*/
+
+html, body{height:100%; }
+
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	text-decoration: none;
+	font-family:"Microsoft YaHei",华文细黑,"MicrosoftJhengHei",微软雅黑,STHeiti,MingLiu;
+	font-weight: normal;
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.form-group{
+	width: 100%;
+	float: left;
+}
+
+ul{
+	list-style: none;
+	padding: 0px;
+}
+a:hover{
+		text-decoration: none;
+	}
+
+
+
+/*work-space*/
+	/*js*/
+	.content{
+		height: 580px;
+		width: 960px;
+		margin: 0 auto;
+		position: relative;
+	}
+	#change-info{
+		position: absolute;
+	}
+	#change-password{
+		position: absolute;
+		display: none;
+	}
+	#newbie-list{
+		position: relative;
+		display: none;
+	}
+	#diliver-text{
+		position: absolute;
+		display: none;
+	}
+
+	#white-block{
+		width: 100px;
+		height: 30px;
+		background-color: #fff;
+		position: absolute;
+		z-index: 0;
+		margin-top:10px;
+		border-radius: 3px;
+
+	}
+
+/*js ends*/
+
+
+#work-space .header{
+	background-color: #e6fdbd;
+	height: 40px;
+	border-radius: 5px;
+	line-height: 40px;
+	padding-left: 40px;
+	margin: 25px 0 100px 0;
+	position: relative;
+	z-index: 0;
+}
+
+#work-space .header ul li a{
+	float: left;
+	margin: 8px 0px 0 0;
+	height: 40px;
+	font-size: 15px;
+	color: #717171;
+	border-radius: 3px;
+	width: 100px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+#work-space .header .active a{
+	
+}
+
+#change-info, #change-password{
+	width: 520px;
+	height: 50%;
+	margin: 0;
+}
+
+	#change-info label, #change-password label{
+		font-size: 18px;
+		color: #717171;
+		font-family: 华文细黑;
+		text-align: right;
+		width: 110px;
+	}
+
+	.col-sm-10{
+		width: 400px;
+	}
+	.col-sm-10 .form-control{
+		width: 300px;
+	}
+
+	#change-info [type=submit], #change-password [type=submit]{
+		background: none;
+		border:none;
+		float: right;
+		width: 50px;
+		padding-left: 20px;
+	}
+		/*newbie-list*/
+		#newbie-list{
+			float: left;
+		}
+
+		#newbie-list table{
+			width: 100%;
+			border:1px solid #7cae25;
+		}
+
+			#newbie-list th{
+				border:1px solid #696969;
+				padding: 15px 7px 2px 7px;
+				background-color: #7bab28;
+				color: #fff;
+				text-align: center;
+				font-size: 15px;
+			}
+			
+			#newbie-list tr{
+				text-align: center;
+			}
+
+			#newbie-list td{
+				border:1px solid #929292;
+				width: 20%;
+				padding: 15px 7px 2px 7px;
+			}
+
+			#newbie-list [type=submit]{
+				margin: 30px 40% 80px 40%;
+				width: 20%;
+				height: 30px;
+				cursor: pointer;
+				background-color: #7bab28;
+				border: 1px solid #80b722;
+				border-radius: 3px;
+				color: #fff;
+			}
+
+		/*newbie-list-end*/	
+
+#diliver-text{
+	
+}	
+/*work-space ends*/
+
+
+/*header*/
+#header{
+	height: 60px;
+	border-bottom: 1px solid #ededed;
+	padding-left: 50px;
+
+}
+	#header img{
+		height: 50px;
+	}
+
+
+.container{
+	width: 980px;
+	margin: 0 auto;
+}
+
+/*header ends*/
+
+
+
+
+
+
+
+/*join-us*/
+#join-us{
+	margin: 0 auto;
+	width: 380px;
+	height: 580px;
+}
+	#join-us h2{
+		font-size: 80px;
+		letter-spacing: 15px;
+		padding: 0 0 40px 0px;
+		font-family:华文细黑;
+		text-align: center;
+	}
+
+	#join-us .form-group{
+		height:50px;
+	}
+
+	#join-us .form-text{
+		float: left;
+		padding: 0 20px 0 0px;
+		line-height: 25px;
+		font-size: 25px;
+		font-family:微软雅黑;
+
+	}
+	#join-us .form-input{
+		float: right;
+		width: 280px;
+	}
+
+	#join-us [type=submit]{
+	margin: 20px 0 0 0;
+	display: block;
+	width: 380px;
+	height: 30px;
+	cursor: pointer;
+	background-color: #98d82a;
+	border: 1px solid #80b722;
+	border-radius: 3px;
+	color: #fff;
+	}
+
+	#join-us .error-info{
+		float: right;
+	}
+
+/*join-us-end*/
+
+
+/*footer*/
+#footer{
+	background: url(../img/footer.png) repeat-x;
+	color: #898989;
+}
+
+#footer-main{
+	height: 240px;
+}
+
+#amisjtu{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 40px;
+	padding: 15px 0 0 30px;
+	margin: 0;
+}
+
+#about-us{
+	width: 30%;
+	float: left;
+	padding: 0px 30px 0 30px;
+
+}
+
+	#about-us li{
+		line-height: 24px;
+
+	}
+	#about-us ul li a:link,#about-us ul li a:visited{
+		color: #898989;
+	}
+
+#contact-us{
+	width: 30%;
+	float: left;
+	padding: 0px 30px 0 30px;
+}
+
+	#contact-us img{
+		float: left;
+		padding-right: 10px;
+	}
+	#contact-us a:link,#contact-us a:visited{
+		color: #898989
+	}
+
+#yifulou{
+	width: 30%;
+	float: left;
+	padding: 0px 30px 0 30px;
+}
+
+#copyright{
+	text-align: center;
+	font-size: 12px;
+	color: #bebebe;
+	margin: 0px;
+	line-height:40px;
+}
+/*footer END*/
+
+/*
+登陆页面
+*/
+#login-page{
+	height:500px;
+}
+
+	#login-page h2{
+		font-size: 28px;
+		font-family: 华文中宋，微软雅黑;
+		padding:20px 0px 0px 20px;
+		letter-spacing: 10px;
+		font-weight: bold;
+	}
+	#login-page hr{
+		width: 780px;
+		size:1px;
+		color:#ededed;
+		margin-top: 0px;
+
+}
+#login{
+	width: 400px;
+	float: left;
+	padding: 0 0 0 40px;
+}
+
+
+
+.form-text{
+	display: block;
+	padding: 10px 0 10px 0;
+}
+
+.form-input{
+	width: 180px;
+	height: 28px;
+	border: 1px solid #898989;
+	border-radius: 3px;
+	padding-left: 5px;
+	float: left;
+}
+
+.error-info{
+	float: left;
+	font-size: 12px;
+	color: #ff0000;
+	padding: 5px;
+}
+
+#login-describe{
+	padding: 20px 0 0 0;
+	color:#545454;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+#no-account{
+	width: 400px;
+	float: left;
+	padding: 70px 0 0 130px;
+}
+
+
+
+.no-account a:link,.no-account a:visited{
+	color: #98d82a;
+}
+
+.no-account a:hover,.no-account a:active{
+	color:#fff;
+	text-decoration: none;
+	background-color: #98d82a;
+}
+
+
+#submit{
+	margin: 10px 0 0 0;
+	width: 70px;
+	height: 30px;
+	cursor: pointer;
+	background-color: #7bab28;
+	border: 1px solid #80b722;
+	border-radius: 3px;
+	color: #fff;
+}
+/*登陆页面结束*/

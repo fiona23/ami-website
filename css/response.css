@@ -1,0 +1,300 @@
+
+@media only screen and (min-width: 0px) and (max-width: 1300px) {
+	html, body {
+		margin:0;
+		padding:0;
+		overflow: hidden;
+		font-size: 12px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#header {
+		height: 58px;
+	}
+		#header img#exo_logo {
+			padding-left: 20px;
+		}
+		#header .head-wrap.group,
+		#header .wrap.group {
+			width: 1024px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#header #back_active {
+			background-size: 85px 70px;
+		}
+		
+		#header nav {
+			left: 322px;
+			width: 693px;
+		}
+		#header nav ul {
+			width: 693px;
+		}
+		#header ul li {
+			width: 85px;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+
+	#who-we-are {
+		background-size: 1280px auto;  
+	}
+		#who-we-are h1 {
+		width: 480px;
+			font-size: 32px;
+			line-height: 34px;
+		}
+		#who-we-are .description {
+			width: 480px;
+		}
+		#who-we-are .description div {
+			clear: both;
+			width: 480px;
+		}
+		
+		#what-we-do .description {
+			width: 960px;
+			height: 410px;
+			left: 50%;
+			margin-left: -480px;
+			margin-top: -205px;
+			background-size: auto 310px;
+			background-position: 0 100px;
+		}
+		#what-we-do .description h1 {
+			font-size: 32px;
+			height: 34px; 
+		}
+		#what-we-do .description div {
+			width: 285px;
+		}
+		#what-we-do .description  div h2 {
+			font-size: 24px;
+		}
+		#what-we-do .description div.method1 {
+			padding-left: 60px;
+		}
+		#what-we-do .description div.method2 {
+			width: 260px;
+			padding-left: 20px;
+		}
+		#what-we-do .description div.method3 {
+			width: 280px; 
+			margin-left: 55px;
+		}
+		#what-we-do .description  div.bottom {
+			padding-top: 295px;
+		}
+		#what-we-do .description  div div.desc_1 {
+			width: 280px;
+		}
+		#what-we-do .description  div div.desc_2 {
+			width: 260px;
+		}
+		#what-we-do .description  div div.desc_3 {
+			width: 260px;
+		}
+/*		#what-we-did .description span.title, #what-we-did .description h2,
+		#we-want-you .description span.title, #we-want-you .description h2,
+		
+		#what-we-did.sliding ul.slider li div.content,
+		#we-want-you.sliding ul.slider li div.content,*/
+		
+		#join-us .description {
+			width: 960px;
+			margin-left: -480px;
+		}
+		#join-us .left {
+			width: 403px;
+			padding-left: 60px;
+		}
+		#join-us .right {
+			border-right: solid 1px #d1d1d1;
+			width: 480px;
+		}
+		#join-us .right h1, #join-us .left h1 { 
+			font-size: 32px;
+			line-height: 32px; 
+		}
+		#join-us .bottom {
+			width: 100%;
+		}
+	
+		#join-us .bottom #footer-partenaires {
+			width: 960px;
+		}
+		#join-us .bottom #footer-partenaires h1 {
+			font-size: 18px; 
+			padding-right: 30px;
+		}
+		#join-us .bottom #footer-partenaires img {
+			width: 800px;
+			margin-top: 45px;
+		}
+		
+		#who-we-are .description, #what-we-do .description, #what-we-did .description, 
+		#we-want-you .description, #options .description, #join-us .description {
+			width: 1024px;
+		}
+		#what-we-did .description, #we-want-you .description { 
+			left: 50%;
+			margin-left: -512px; 
+		}
+		
+	.carousel > .carousel-inner > .item div.content {
+		width: 420px;
+	}
+	.carousel > .carousel-inner > .item {
+		padding-left: 125px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 960px;
+	}
+	.carousel > .carousel-inner > .item img {
+		width: 315px;
+	}
+	.slider_container ul.slider li div.content {
+		width: 420px;
+	}
+	.next-slide, .prev-slide {
+		width: 50px;
+	}
+	.next-slide {
+		background-position: 0 200px;
+	}
+	.prev-slide {
+		background-position: 36px 200px;
+		left: -100px;
+	}
+	.next-slide.arrow2 {
+		background-position: 0 200px;
+		right: -16px;
+	}
+	.prev-slide.arrow2 {
+		background-position: 36px 200px;
+	}
+
+	.prev-slide {
+		background-position: 34px 200px;
+	}
+	
+	.next-slide:active {
+		background-image: url(../img/right-arrow.png);
+	}
+	.prev-slide:active {
+		background-image: url(../img/left-arrow.png);
+	}
+	.next-slide.arrow2:active {
+		background-image: url(../img/right-arrow2.png);
+	}
+	.prev-slide.arrow2:active {
+		background-image: url(../img/left-arrow2.png);
+	}
+
+	.ui-slider-horizontal { height: 10px;  }
+	.ui-slider-horizontal .ui-slider-range { height: 6px; }
+	.ui-slider .ui-slider-handle { width: 24px; height: 24px; margin-top: -5px; z-index: 20006; }
+	#orientation {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1024px) and (orientation:portrait) {
+	#orientation {
+		position: fixed;
+		display: block;
+		background: #000;
+		opacity: 0.9;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		z-index: 999999;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+	/* html, body { width: 320px; } */
+	#orientation { display: none; }
+	/* Styles */
+	#header { height: 56px; position: relative; padding-left: 40px;}
+	#header #back_active, #header nav { display: none; }
+	#header .wrap .lang-selector { left: 320px; }
+	#main-content { overflow: scroll; }
+	#who-we-are { height: 480px; background-image: url(../img/mobile_back.png); background-size: auto 286px; background-position: 86px 291px; }
+	#who-we-are .next { display: none; }
+	#who-we-are .description { width: 274px; margin: 0; padding: 23px; margin-left: 50%; left: -187px; top: 8px; }
+	#who-we-are .description h1 { width: 274px; top: 0; left: 0; font-size: 22px; line-height: 27px; }
+	#who-we-are .description .content { width: 274px; font-size: 12px; }
+	#what-we-do, #what-we-did, #we-want-you { width: 320px; display: none; }
+	#join-us { position: relative; height: 670px; background-image: url(../img/mobile_back.png); background-size: auto 286px; background-position: 86px -191px; background-repeat: no-repeat; }
+	#join-us .description { width: 274px; left: 0; top: 110px; margin: 0; padding: 0; padding: 23px; margin-left: 50%; left: -187px; }
+	#join-us .description .right { border: none;}
+	#join-us .description .right h1, #join-us .description .left h1 { font-size: 30px; } 
+	#join-us .description .right .content, #join-us .description .left .content { font-size: 16px; line-height: 18px; padding-top: 13px; }
+	#join-us .description .right .content .notes, #join-us .description .left .content .notes { font-size: 12px; line-height: 14px; padding-top: 13px; }
+	#join-us .description .right, #join-us .description .left { clear: both; width: 274px; margin: 0; padding: 0; }
+	#join-us .description .left { padding-top: 40px; }
+
+	#join-us .description .left h3{display: block;}
+	#join-us .bottom, #join-us .bottom #footer-partenaires { width: 480px; display: none; }
+	.anchorClass, #join-us, #who-we-are { min-width: 480px; }
+}
+
+@media only screen and (min-width : 320px) and (max-width : 380px) {
+	/* html, body { width: 320px; } */
+	#orientation { display: none; }
+	/* Styles */
+	#header { height: 56px; position: relative; padding-left: 0; }
+	#header #back_active, #header nav { display: none; }
+	#header .wrap .lang-selector { left: 320px; }
+	#main-content { overflow: scroll; }
+	#who-we-are { height: 480px; background-image: url(../img/mobile_back.png); background-size: auto 286px; background-position: 57px 291px; }
+	#who-we-are .next { display: none; }
+	#who-we-are .description { width: 274px; margin: 0; padding: 23px; margin-left: auto; margin-right: auto; left: 34px; top: 8px; }
+	#who-we-are .description h1 { width: 274px; top: 0; left: 0; font-size: 22px; line-height: 27px; }
+	#who-we-are .description .content { width: 274px; font-size: 12px; }
+	#what-we-do, #what-we-did, #we-want-you { width: 380px; display: none; }
+	#join-us { position: relative; height: 670px; background-image: url(../img/mobile_back.png); background-size: auto 286px; background-position: 57px -191px; background-repeat: no-repeat; }
+	#join-us .description { width: 274px; left: 34px; top: 110px; margin: 0; padding: 0; padding: 23px; margin-left: auto; margin-right: auto; }
+	#join-us .description .right { border: none; }
+	#join-us .description .right h1, #join-us .description .left h1 { font-size: 30px; } 
+	#join-us .description .right .content, #join-us .description .left .content { font-size: 16px; line-height: 18px; padding-top: 13px; }
+	#join-us .description .right .content .notes, #join-us .description .left .content .notes { font-size: 12px; line-height: 14px; padding-top: 13px; }
+	#join-us .description .right, #join-us .description .left { clear: both; width: 286px; margin: 0; padding: 0; }
+	#join-us .description .left { padding-top: 40px; }
+
+	#join-us .description .left h3{display: block;}
+	#join-us .bottom, #join-us .bottom #footer-partenaires { width: 380px; display: none; }
+	.anchorClass, #join-us, #who-we-are { min-width: 380px; }
+}
+
+@media only screen and (max-width : 320px) {
+	/* html, body { width: 320px; } */
+	#orientation { display: none; }
+	/* Styles */
+	#header { height: 56px; position: relative; padding-left: 0; }
+	#header #back_active, #header nav { display: none; }
+	#header .wrap .lang-selector { left: 320px; }
+	#main-content { overflow: scroll; }
+	#who-we-are { height: 480px; background-image: url(../img/mobile_back.png); background-size: auto 286px; background-position: 23px 291px; }
+	#who-we-are .next { display: none; }
+	#who-we-are .description { width: 274px; margin: 0; padding: 23px; margin-left: auto; margin-right: auto; left: 0; top: 8px; }
+	#who-we-are .description h1 { width: 274px; top: 0; left: 0; font-size: 22px; line-height: 27px; }
+	#who-we-are .description .content { width: 274px; font-size: 12px; }
+	#what-we-do, #what-we-did, #we-want-you { width: 320px; display: none; }
+	#join-us { position: relative; height: 670px; background-image: url(../img/mobile_back.png); background-size: auto 286px; background-position: 23px -191px; background-repeat: no-repeat; }
+	#join-us .description { width: 274px; left: 0; top: 110px; margin: 0; padding: 0; padding: 23px; margin-left: auto; margin-right: auto; }
+	#join-us .description .right { border: none;}
+	#join-us .description .right h1, #join-us .description .left h1 { font-size: 30px; } 
+	#join-us .description .right .content, #join-us .description .left .content { font-size: 16px; line-height: 18px; padding-top: 13px; }
+	#join-us .description .right .content .notes, #join-us .description .left .content .notes { font-size: 12px; line-height: 14px; padding-top: 13px; }
+	#join-us .description .right, #join-us .description .left { clear: both; width: 286px; margin: 0; padding: 0; }
+	#join-us .description .left { padding-top: 40px; }
+
+	#join-us .description .left h3{display: block;}
+	#join-us .bottom, #join-us .bottom #footer-partenaires { width: 320px; display: none; }
+	.anchorClass, #join-us, #who-we-are { min-width: 320px; }
+}

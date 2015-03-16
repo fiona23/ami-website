@@ -1,0 +1,36 @@
+<ami_projects>
+
+	<project number="01">
+		<name> InnoXYZ 协作平台</name>
+		<leader>YueTang</leader>
+		<startingDate>2015.01.01</startingDate>
+		<resource name="Image">
+			<format path="./img/site1.png" />
+		</resource>
+		<description>
+			InnoXYZ是一个致力于推动上海交通大学科研，充分开发及利用其创新资源，推动交大科技创业及促进科技成果转化专业化、深入化的网络平台，旨在实现商业平台、高校项目平台和资源交易平台的整合。
+		</description>
+	</project>
+
+
+	<project number="02">
+		<name>思源公益图书馆</name>
+		<leader>JDY</leader>
+		<startingDate>2014.11.11</startingDate>
+		<description>思源公益图书馆是为长期公益项目-思源公益打造的移动图书馆平台，旨在为公益捐书提供统一的平台。简化了捐书者的捐书流程，更可以追踪自己所捐赠的书本；同时也提供志愿者和图书管理员一个统一便捷的管理平台。</description>
+		<resource name="Image">
+			<format path="./img/site2.png" />
+		</resource>
+	</project>
+
+	<project number="03">
+		<name>交大传承</name>
+		<leader>JDY</leader>
+		<startingDate>2014.11.11</startingDate>
+		<description>思源公益图书馆是为长期公益项目-思源公益打造的移动图书馆平台，旨在为公益捐书提供统一的平台。简化了捐书者的捐书流程，更可以追踪自己所捐赠的书本；同时也提供志愿者和图书管理员一个统一便捷的管理平台。</description>
+		<resource name="Image">
+			<format path="./img/site2.png" />
+		</resource>
+	</project>
+
+</ami_projects>
