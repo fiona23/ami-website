@@ -6,6 +6,7 @@ $(document).ready(function(){
 	newbieStyle();
 	changeTab();
 	changeContent();
+	addMesMem ();
 })
 
 function emailValidate(){
@@ -81,4 +82,19 @@ function changeContent () {
 			content.siblings().fadeOut(500);
 		})
 	}
+}
+
+function addMesMem () {
+	$('#choose-department').unbind('submit').bind('submit',function(event){
+		var $form = $(this),
+			term = $form.find( "input[name='select[]']" ).val();
+			url = $form.attr("action");
+		event.preventDefault();
+		var posting = $.post(url, { select:term} );
+		posting.done(function(data){
+			var data1 = $(data)
+			$('#diliver-text').empty().append(data1);
+		})
+	})
+
 }

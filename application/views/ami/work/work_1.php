@@ -43,4 +43,4 @@
 	<input type="submit" value="保存" />
 	</form>
 
-</div>
+</div><!--change-info-->

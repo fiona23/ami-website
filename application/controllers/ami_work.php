@@ -2,6 +2,7 @@
 
 class Ami_work extends CI_Controller {
 
+
 	public function __construct() {
 		parent::__construct();
 		$this->load->library('session');
@@ -166,6 +167,56 @@ class Ami_work extends CI_Controller {
 		}
 	}
 
+	public function deliverText()
+	{
+		$this->load->helper('url');
+		if ($this->session->userdata('authenticated') === FALSE)
+		{
+			$this->load->view('ami/bug');	
+		}
+		else
+		{
+			if ( $this->input->post('select') != FALSE  ) // select the department, no members
+			{
+				
+				$list = array();
+				foreach ( $this->input->post('select') as $department )
+				{
+					var_dump($department);
+					$temp_num=intval($department,10);
+					var_dump($temp_num);
+					$query = $this->ami_model->getIdNameByDepartment($temp_num);
+					if ($query->num_rows() > 0)
+						$list = array_merge($list, $query->result() );
+				}
+				$data['list'] = $list;
+				$this->load->view("ami/work/work_4_one");
+				$this->load->view("ami/work/work_4_two",$data);
+				//$this->load->view("ami/work/work_4_end");
+				//all needed id in $list
+			}
+			else if ( $this ->input->post('send') != FALSE && $this->input->post('message') != FALSE) //receivers are selected
+			{
+				//send text.
+				$message = $this->input->post('message');
+				var_dump($message);
+				foreach ($this->input->post('send') as $receiver)
+				{
+					$this->ami_model->sendMessage($receiver,$message);
+				}
+				$this->load->view("ami/work/work_4_one");
+				//$this->load->view("ami/work/work_4_end");			
+			}
+			else
+			{
+				$this->load->view("ami/work/work_4_one");
+				//$this->load->view("ami/work/work_4_one");
+				//$this->load->view("ami/work/work_4_end");
+			}
+		}
+	}
+	
+
 	public function mainpage() 
 	{
 		#$this->load->library('Jquery');
@@ -203,6 +254,7 @@ class Ami_work extends CI_Controller {
 					$this->load->view("ami/work/work_2_none");
 				}
 				//-------------------------------------------------------------------------------------
+				/*
 				if ( $this->input->post('select') != FALSE  ) // select the department, no members
 				{
 					$list = array();
@@ -219,6 +271,7 @@ class Ami_work extends CI_Controller {
 					$data['list'] = $list;
 					$this->load->view("ami/work/work_4_one",$data);
 					$this->load->view("ami/work/work_4_two",$data);
+					$this->load->view("ami/work/work_4_end");
 					//all needed id in $list
 				}
 				else if ( $this ->input->post('send') != FALSE && $this->input->post('message') != FALSE) //receivers are selected
@@ -230,14 +283,19 @@ class Ami_work extends CI_Controller {
 					{
 						$this->ami_model->sendMessage($receiver,$message);
 					}
-					$this->load->view("ami/work/work_4_one");			
+					$this->load->view("ami/work/work_4_one");
+					$this->load->view("ami/work/work_4_end");			
 				}
 				else
 				{
 					$this->load->view("ami/work/work_4_one");
+					$this->load->view("ami/work/work_4_end");
 				}
 			//$this->load->view("ami/work/work_4",$data);
+			*/
+				$this->load->view("ami/work/work_4_one",$data);
 			}
+
 			$this->load->view("ami/footer",$data);
 
 		}

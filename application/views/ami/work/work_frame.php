@@ -12,7 +12,7 @@ $(document).ready( function() {
 <div class="container">
 	<div class="header">
 		<ul>
-			<li id="change-info-head"class="active " ><a href="#" class="change-info">完善信息</a></li>
+			<li id="change-info-head" class="active " ><a href="#" class="change-info">完善信息</a></li>
 			<li id="change-password-head" ><a href="#" class="change-password">改变密码</a></li>
 
 			<?php if ($level == 0) {?>

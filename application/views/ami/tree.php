@@ -4,29 +4,29 @@
 	<?php for ($y = 0; $y < 4; $y++) :?>
 		<?php if ($x == 2) :?>
 			<p>
-			<?php if (count($tree[$x][$y]) == 0) :?>
-				NONE
-			<?php else :?>
-				<?php foreach ($tree[$x][$y] as $p):?>
-					( 
-						<?=$p->name?>
-						<?=$p->email?>
-						<?=$p->cellphone?>
-					)
-				<?php endforeach ?>
-			<?php endif ?>
-			+++
-			<?php if (count($tree[$x+1][$y]) == 0) :?>
-				NONE
-			<?php else :?>
-				<?php foreach ($tree[$x+1][$y] as $p):?>
-					( 
-						<?=$p->name?>
-						<?=$p->email?>
-						<?=$p->cellphone?>
-					)
-				<?php endforeach ?>
-			<?php endif ?>
+				<?php if (count($tree[$x][$y]) == 0) :?>
+					NONE
+				<?php else :?>
+					<?php foreach ($tree[$x][$y] as $p):?>
+						( 
+							<?=$p->name?>
+							<?=$p->email?>
+							<?=$p->cellphone?>
+						)
+					<?php endforeach ?>
+				<?php endif ?>
+				+++
+				<?php if (count($tree[$x+1][$y]) == 0) :?>
+					NONE
+				<?php else :?>
+					<?php foreach ($tree[$x+1][$y] as $p):?>
+						( 
+							<?=$p->name?>
+							<?=$p->email?>
+							<?=$p->cellphone?>
+						)
+					<?php endforeach ?>
+				<?php endif ?>
 			</p>
 		<?php else : ?>
 			<p>

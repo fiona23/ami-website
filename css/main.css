@@ -47,6 +47,11 @@ a:hover{
 
 
 /*work-space*/
+#work-space{
+	font-size: 18px;
+	color: #717171;
+	font-family: 华文细黑;
+}
 	/*js*/
 	.content{
 		height: 580px;
@@ -79,6 +84,11 @@ a:hover{
 		margin-top:10px;
 		border-radius: 3px;
 
+	}
+
+	#no-newbies{
+		position: absolute;
+		display: none;
 	}
 
 /*js ends*/
@@ -183,8 +193,22 @@ a:hover{
 		/*newbie-list-end*/	
 
 #diliver-text{
-	
+	width: 520px;
+	padding-left: 30px;
 }	
+	#diliver-text .col-sm-10 .form-control{
+		width: 100
+	}
+
+.send-mes form table tr td{
+ 	padding: 20px;
+ 	background-color: #fff;
+
+}
+
+.send-mes h2{
+	margin-top: 0;
+}
 /*work-space ends*/
 
 
@@ -329,7 +353,7 @@ a:hover{
 登陆页面
 */
 #login-page{
-	height:500px;
+	height:80%;
 }
 
 	#login-page h2{

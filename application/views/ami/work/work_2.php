@@ -1,4 +1,4 @@
-	<div id="newbie-list" class="container newbie-con">
+<div id="newbie-list" class="container newbie-con">
 	<h2>新成员</h2>
 	<form action="http://localhost/index.php/ami_work/getNew" method="POST">
 	<table >

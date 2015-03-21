@@ -1,3 +1,3 @@
-<h2>No More Newbies.</h2>
+<h2 id="no-newbies" class="container newbie-con">没有新成员</h2>
 
 

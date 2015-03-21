@@ -207,6 +207,30 @@ class Ami_model extends CI_Model {
 	 		}
 	 	}
 	}
+
+	public function getInfoByLevelDepartment( $level ,$department ) 
+	 {
+		$temp = array("name","cellphone","email");
+		$this->db->select( $temp );
+		$query = $this->db->get_where(self::DB_MEMBERS,array('level' => $level,'department' =>$department));
+		return $query->result();
+	 }
+	
+	public function getTree()
+	{
+		$tree = array();  //$tree[$i][$j] means member list of level i at department j.
+		array_push($tree, "NULL");
+		for ($i = 1 ; $i < 4; $i++) //level
+		{
+			$list=array();
+			for ($j = 1; $j <= 4; $j++) //department
+			{
+				array_push($list,$this->ami_model->getInfoByLevelDepartment($i,$j));
+			}
+			array_push($tree, $list);
+		}
+		return $tree;
+	}
 }
 
 ?>

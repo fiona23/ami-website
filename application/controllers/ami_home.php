@@ -63,10 +63,11 @@ class Ami_home extends CI_Controller {
 			$level=$this->session->userdata('level');
 			$data['name'] = $name;
 			$data['level'] = $level;
-			#$this->load->view('ami/working',$data);
+			$tree = $this->ami_model->getTree();
+			$data['tree'] = $tree;
 			$this->load->view('ami/upright_logined',$data);	
-			
-			#$this->load->view('ami/home/signup',$data);
+			//$this->load->view('ami/member_tree',$data);
+			$this->load->view('ami/tree',$data);
 			$this->load->view('ami/footer',$data);
 		}
 	}
