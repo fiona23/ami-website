@@ -2,6 +2,7 @@
 
 
 architecture
+tree
 workspace
 header
 join-us
@@ -43,8 +44,103 @@ ul{
 a:hover{
 		text-decoration: none;
 	}
+hr{
+	position: relative;
+	z-index: -20;
+}
+
+/*tree*/
+#member-tree{
+	min-height: 80%
+}
+
+#member-tree h1{
+	color: #328946;
+	padding-bottom: 90px;
+	
+}
+
+#member-tree #xujun{
+	height: 180px;
+}
+	#member-tree #xujun img{
+		float: left;
+	}
+
+	#member-tree #xujun div{
+		float: left;
+		padding: 0 0 0 20px;
+	}
+
+#member-tree ul{
+	height: 50px;
+}
+
+	#member-tree #department li{
+		float: left;
+		width: 25%;
+		font-size: 18px;
+	}
+
+#member-tree .level-1{
+	position: relative;
+	width: 100%;
+
+}
+	#member-tree .level-1-mem {
+		width: 20%;
+		height: 40px;
+		position: absolute;
+	}
+
+		#member-tree .level-1-mem .mem-name{
+			font-size: 18px;
+			font-weight: bold;
+			color: #328946;
+
+		}
+
+		#member-tree .level-1-mem .mem-name:hover, #member-tree .level-2-2:hover{
+			color: #5bb670;
+			cursor: pointer;
+		}
+
+#member-tree .level-2{
+	float: left;
+	padding: 20px;
+	position: relative;
+	width: 100%;
+}
+
+	#member-tree .level-2-2{
+		color: #328946;
+
+	}
 
 
+#member-tree .level-2-mem{
+	position: absolute;
+	width: 25%;
+}
+
+#member-tree .mem-detail{
+	position: absolute;
+	top: -100px;
+	left: 20px;
+	z-index: -1;
+	display: none;
+	height: 200px;
+	width: 200px;
+	padding:10px 0 0 25px;
+	background: url(/img/border.png) no-repeat;
+}
+	#member-tree .mem-detail p{
+		padding-top: 40px;
+	}
+
+
+
+/*tree end*/
 
 /*work-space*/
 #work-space{

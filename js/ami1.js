@@ -7,6 +7,7 @@ $(document).ready(function(){
 	changeTab();
 	changeContent();
 	addMesMem ();
+	tree();
 })
 
 function emailValidate(){
@@ -97,4 +98,29 @@ function addMesMem () {
 		})
 	})
 
+}
+
+function tree(){
+	$level1 = $('.level-1').find('.level-1-mem');
+	$name = $('.mem-name')
+	for (var i=0; i<$level1.length; i++){
+		$level1.eq(i).css("left",i*25+'%')
+	}
+
+	for (var j=0; j<$name.length; j++){
+		$name.eq(j).click(function(){
+			console.log(this)
+			$(this).next().fadeIn(500);
+		})
+
+		$name.eq(j).mouseout(function(){
+			$(this).next().fadeOut(500);
+		})
+	}
+
+	$level2 = $('.level-2-mem')
+	for (var k=0; k<$level2.length; k++){
+		$level2.eq(k).css("left", k*25+'%')
+	}
+	
 }
