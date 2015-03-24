@@ -41,13 +41,17 @@ ul{
 	list-style: none;
 	padding: 0px;
 }
-a:hover{
+ a:link, a:visited, a:hover, a:active{
 		text-decoration: none;
+		outline: none;
 	}
+
+
 hr{
 	position: relative;
 	z-index: -20;
 }
+
 
 /*tree*/
 #member-tree{
@@ -105,11 +109,17 @@ hr{
 			cursor: pointer;
 		}
 
+		#member-tree .level-2-3:hover{
+			color: #919191;
+			cursor: pointer;
+		}
+
 #member-tree .level-2{
 	float: left;
 	padding: 20px;
 	position: relative;
 	width: 100%;
+
 }
 
 	#member-tree .level-2-2{
@@ -121,21 +131,22 @@ hr{
 #member-tree .level-2-mem{
 	position: absolute;
 	width: 25%;
+	line-height: 30px;
 }
 
 #member-tree .mem-detail{
 	position: absolute;
-	top: -100px;
-	left: 20px;
-	z-index: -1;
+	left: 30%;
+	z-index: 5;
 	display: none;
-	height: 200px;
-	width: 200px;
+	height: 150px;
+	width: 300px;
 	padding:10px 0 0 25px;
-	background: url(/img/border.png) no-repeat;
+	background: url(/img/border1.png) no-repeat;
 }
 	#member-tree .mem-detail p{
-		padding-top: 40px;
+		line-height: 50px;
+		color: #000;
 	}
 
 
@@ -191,7 +202,7 @@ hr{
 
 
 #work-space .header{
-	background-color: #e6fdbd;
+	background-color: #6c6c6c;
 	height: 40px;
 	border-radius: 5px;
 	line-height: 40px;
@@ -201,22 +212,24 @@ hr{
 	z-index: 0;
 }
 
+	#work-space .header .active{
+		color: #717171;
+	}
+
 #work-space .header ul li a{
+	color: #fff;
 	float: left;
 	margin: 8px 0px 0 0;
 	height: 40px;
 	font-size: 15px;
-	color: #717171;
 	border-radius: 3px;
 	width: 100px;
 	text-align: center;
 	position: relative;
 	z-index: 1;
-}
-
-#work-space .header .active a{
 	
 }
+
 
 #change-info, #change-password{
 	width: 520px;
@@ -343,7 +356,8 @@ hr{
 		font-size: 80px;
 		letter-spacing: 15px;
 		padding: 0 0 40px 0px;
-		font-family:华文细黑;
+		font-family: 华文细黑;
+		font-weight: lighter;
 		text-align: center;
 	}
 
@@ -388,6 +402,9 @@ hr{
 	background: url(../img/footer.png) repeat-x;
 	color: #898989;
 }
+	#footer a:link, #footer a:visited{
+		color: #898989;
+	}
 
 #footer-main{
 	height: 240px;
@@ -412,9 +429,6 @@ hr{
 		line-height: 24px;
 
 	}
-	#about-us ul li a:link,#about-us ul li a:visited{
-		color: #898989;
-	}
 
 #contact-us{
 	width: 30%;
@@ -425,9 +439,6 @@ hr{
 	#contact-us img{
 		float: left;
 		padding-right: 10px;
-	}
-	#contact-us a:link,#contact-us a:visited{
-		color: #898989
 	}
 
 #yifulou{
@@ -446,18 +457,18 @@ hr{
 /*footer END*/
 
 /*
-登陆页面
+login
 */
 #login-page{
-	height:80%;
+	min-height:80%;
 }
 
 	#login-page h2{
 		font-size: 28px;
-		font-family: 华文中宋，微软雅黑;
-		padding:20px 0px 0px 20px;
+		font-family: 微软雅黑;
+		font-weight: lighter;
+		padding:20px 0px 0px 40px;
 		letter-spacing: 10px;
-		font-weight: bold;
 	}
 	#login-page hr{
 		width: 780px;
@@ -472,7 +483,14 @@ hr{
 	padding: 0 0 0 40px;
 }
 
+	#login form{
+		padding:  0 0 40px 0;
+	}
 
+	#login form .form-group{
+		margin: 0;
+		height: 112px;
+	}
 
 .form-text{
 	display: block;
@@ -481,13 +499,12 @@ hr{
 
 .form-input{
 	width: 180px;
-	height: 28px;
-	border: 1px solid #898989;
-	border-radius: 3px;
-	padding-left: 5px;
 	float: left;
 }
 
+	.col-sm-10{
+		padding-left: 0;
+	}
 .error-info{
 	float: left;
 	font-size: 12px;
@@ -531,4 +548,4 @@ hr{
 	border-radius: 3px;
 	color: #fff;
 }
-/*登陆页面结束*/
+/*login结束*/
